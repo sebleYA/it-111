@@ -1,0 +1,120 @@
+/*Style for my travle website*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*background: gray;*/
+  font-size: 95%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  width: 940px;
+  margin: 20px auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav {
+  height: 50px;
+  line-height: 50px;
+  background:#05a;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+nav a:hover{
+    background: #f00;  background:#05a;
+    background:#02a;
+
+}
+
+#banner {
+  background: #080;
+}
+
+main {
+  margin-top: 20px;
+  width: 580px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+aside {
+  background: #fff;
+  width: 340px;
+  float: right;
+  margin-bottom: 20px;
+}
+figure {
+  margin: 10px;
+}
+
+figcaption {
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  font: 0.8em;
+  font-style: italic;
+}
+footer {
+  border-top: 1px dotted #666;
+  height: 50px;
+  line-height: 50px;
+  clear: both;
+}
+footer ul {
+  float: right;
+  list-style-type: none;
+}
+/* Don't forget that list itmes are block level elemens, and if you would like them to be dispayed horzintally, thhen float them!*/
+footer li {
+  float: left;
+  margin-left: 20px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/******Typograhpy******/
+
+/* 1 em = 16px*/
+h1 {
+  font-size: 1.802em;
+}
+h2 {
+  font-size: 1.602m;
+}
+h3 {
+  font-size: 1.424em;
+}
+
+p {
+    margin-bottom: 20px;
+}
+blockquote{
+    margin-bottom: 20px;
+    font-size: 1.424em;
+    font-style: italic;
+    border-left: 30px solid #05a;
+    padding-left: 30px;
+
+}
