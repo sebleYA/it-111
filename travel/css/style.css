@@ -3,51 +3,85 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   /*background: gray;*/
   font-size: 95%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #wrapper {
   width: 940px;
-  margin: 20px auto;
+  margin: 20px auto; /* to center the wrapper*/
 }
 
 header {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 nav {
   height: 50px;
-  line-height: 50px;
-  background:#05a;
+  line-height: 50px; /*not to touch the upper border of the nav container */
+  background: #05a;
 }
 
-nav ul{
-    list-style-type: none;
+nav ul {
+  list-style-type: none; /* to remove the bulletin of the ul*/
 }
-nav li{
-    float: left;
-    width: 20%;
-    text-align: center;
+nav li {
+  float: left; /* to display the list horizontally*/
+  width: 20%;
+  text-align: center; /* to center the list*/
 }
 
-nav a{
-    text-decoration: none;
-    display: block;
-    color: #fff;
+nav a {
+  text-decoration: none; /* to remove the underline*/
+  display: block;
+  color: #fff;
 }
-nav a:hover{
-    background: #f00;  background:#05a;
-    background:#02a;
+nav a:hover {
+  background: #002288;
+}
+
+nav#secondary{
+  height: auto;
+}
+
+nav#secondary li{
+  float: none;
+  width: auto;
+  text-align: left;
 
 }
+nav#secondary a{
+  padding-left: 20px;
+}
+
+.home nav li:nth-child(1),
+.about nav li:nth-child(2),
+.tours nav li:nth-child(3),
+.promos nav li:nth-child(4),
+.contact nav li:nth-child(5){
+  background: #002288;
+}
+
+.tours nav#secondary li a{
+  background: #05a;
+
+}
+.tours nav#secondary li a:hover{
+  background: #002288;
+
+}
+
+
 
 #banner {
   background: #080;
+  margin-bottom: 10px;
 }
 
 main {
@@ -57,12 +91,42 @@ main {
   margin-bottom: 20px;
 }
 
+.container{
+  clear: both;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+
+.third{
+  width: 300px;
+  float: left;
+  border: 1px  solid #f00 ;
+  padding: 15px 15px 0 15px;
+
+}
+
+.third:nth-child(1),
+.third:nth-child(2){
+  margin-right: 20px;
+}
+
+.third p{
+  font-size: .9em;
+}
+
+
 aside {
   background: #fff;
   width: 340px;
   float: right;
   margin-bottom: 20px;
 }
+.tours aside{
+  border: 1px solid red;
+  padding: 10px;
+}
+
 figure {
   margin: 10px;
 }
@@ -84,14 +148,14 @@ footer ul {
   float: right;
   list-style-type: none;
 }
-/* Don't forget that list itmes are block level elemens, and if you would like them to be dispayed horzintally, thhen float them!*/
+/* Don't forget that list itmes are block level elements, and if you would like them to be dispayed horzintally, thhen float them!*/
 footer li {
   float: left;
   margin-left: 20px;
 }
 img {
   display: block;
-  max-width: 100%;
+  max-width: 100%; /* to fit the image inside the div container*/
 }
 
 /******Typograhpy******/
@@ -106,15 +170,20 @@ h2 {
 h3 {
   font-size: 1.424em;
 }
-
-p {
-    margin-bottom: 20px;
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-blockquote{
-    margin-bottom: 20px;
-    font-size: 1.424em;
-    font-style: italic;
-    border-left: 30px solid #05a;
-    padding-left: 30px;
-
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+blockquote {
+  margin-bottom: 20px;
+  font-size: 1.424em;
+  font-style: italic;
+  border-left: 30px solid #05a;
+  padding-left: 30px;
 }

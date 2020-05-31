@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Homework Website</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+      <div id="wrapper">
+          <header>
+
+          </header>
+
+          <nav>
+
+          </nav>
+
+          <main>
+            <form action="formhandler-2.php" method="post">
+                <fieldset>
+                  <legend>Contact Seble</legend>
+                  <label> Name</label>
+                  <input type="text" name="name" value="" />
+                  <label>Gender</label>
+                  <ul>
+                  <li><input type="radio" name="gender" value="male" /> Male</li>
+                  <li><input type="radio" name="gender" value="female" />Female</li>
+                </ul>
+                  <label> Email</label>
+                  <input type="text" name="email" />
+                  <label>Payment </label>
+                  <ul>
+                    <li>
+                      <input type="radio" name="payment" value="mastercard" /> Mastercard
+                    </li>
+                    <li>
+                      <input type="radio" name="payment" value="visa" /> Visa
+                    </li>
+                    <li>
+                      <input type="radio" name="payment" value="amx" /> AMX
+                    </li>
+                    <li>
+                      <input type="radio" name="payment" value="discover" /> Discover
+                    </li>
+                  </ul>
+                  <label>Wines </label>
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="wines[]" value="cab" /> Cabernet
+                    </li>
+                    <li>
+                      <input type="checkbox" name="wines[]" value="merlot" /> Marlot
+                    </li><li>
+                      <input type="checkbox" name="wines[]" value="syrah" /> Syrah
+                    </li>
+                    <li>
+                      <input type="checkbox" name="wines[]" value="blend" /> Red Blend
+                    </li>
+                    </ul>
+                    <label> Regions</label>
+                    <select name="regions">
+                      <option value="nw">Northwest</option>
+                      <option value="sw">Southwest</option>
+                      <option value="mw">Midwest</option>
+                      <option value="so">South</option>
+                      <option value="se">Southeast</option>
+                      <option value="ne">Northeast</option>
+                      <option value="we">West</option>
+          
+          
+          
+          
+          
+          
+                    </select>
+          
+                     
+                    
+                  <label> Comment</label>
+                  <textarea name="comment"> </textarea>
+                  <input type="submit" value="send it!!" />
+                </fieldset>
+              </form>
+          
+
+
+          </main>
+
+          <aside>
+
+
+          </aside>
+
+          <footer>
+
+
+          </footer>
+
+
+
+
+
+      </div>
+    
+  </body>
+</html>
