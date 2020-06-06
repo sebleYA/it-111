@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Table classwork</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      #wrapper {
+        width: 940px;
+        margin: 20px auto;
+      }
+
+      main {
+        width: 580px;
+        float: left;
+        background: #ddd;
+      }
+
+      table {
+        width: 560px;
+        border: 1px solid #f00;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+
+      td {
+        width: 25%;
+        border: 1px solid#f00; /* the default of td is off to the left*/
+        vertical-align: top;
+        padding: 10px;
+      }
+
+      th {
+        background: yellow; /* the default behaviour of th is display in bold and center*/
+        padding: 15px;
+        font-size: 2em;
+      }
+
+      aside {
+        width: 340px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <main>
+        <table>
+          <!-- first row-->
+          <tr>
+            <th colspan="4">This is our tabe heading</th>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </main>
+      <aside>
+        <h3>This is my headline 3 on the aside</h3>
+      </aside>
+    </div>
+  </body>
+</html>

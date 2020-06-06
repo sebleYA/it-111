@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Table classwork</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      #wrapper {
+        width: 940px;
+        margin: 20px auto;
+      }
+
+      table {
+        width: 920px;
+        border: 1px solid #f00;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+
+      td {
+        width: 25%;
+         /* the default of td is off to the left*/
+        vertical-align: top;
+        padding: 10px;
+      }
+
+      td img {
+        width: 210px;
+      }
+
+      th {
+        background: rgb(68, 66, 94); /* the default behaviour of th is display in bold and center*/
+        padding: 15px;
+        font-size: 2em;
+        font-family: sans;
+        
+      }
+      .des1{
+          font-size: .92em;
+          font-style: italic;
+          text-align: center;
+      }
+      .des2{
+          font-size: .92em;
+          font-style: oblique;
+          font-family: verdana,Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <table>
+        <!-- first row-->
+        <tr>
+          <th colspan="4">This is our tabe heading</th>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+        </tr>
+        <tr class="des1">
+          <td>Description of images</td>
+          <td>Description of images</td>
+          <td>Description of images</td>
+          <td>Description of images</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+          <td>
+            <img src="images/image1.jpg" alt="images" />
+          </td>
+        </tr>
+        <tr class="des2">
+          <td>Description of images</td>
+          <td>Description of images</td>
+          <td>Description of images</td>
+          <td>Description of images</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
