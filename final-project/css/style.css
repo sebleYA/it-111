@@ -74,12 +74,15 @@ body {
   width: 340px;
   float: right;
   background: sienna;
+  margin-right: 10px;
 }
-.container img {
+/* .blueberry img {
   margin-top: 10px;
   padding: 20px;
   max-width: 100%;
-}
+} */
+.blueberry { max-width: 960px; }
+
 .box-2 {
   width: 940px;
   background: darkgray;
